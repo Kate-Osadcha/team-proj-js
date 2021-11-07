@@ -15,9 +15,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    scroll-behavior: auto;
 
     .modal-window-container {
       padding: 48px 20px 41px 20px;
+      overflow-x: auto;
 
       .modal-window-container-poster {
         width: 240px;
