@@ -45,10 +45,29 @@
         .film-info-list {
           .film-info-list-item {
             display: flex;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 1.33;
+
+            .film-info-text-left {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 1.33;
+              color: #8C8C8C;
+            }
+
+            .film-info-text-right {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 1.33;
+            }
+
+            .film-info-text-right-title {
+              text-transform: uppercase;
+            }
+
+            .film-info-text-right-numbers {
+              line-height: 14px;
+            }
           }
         }
       }
