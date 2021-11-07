@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #000000;
-  opacity: 0.25;
+  // opacity: 0.25;
   z-index: 999;
 
   .modal-window {
@@ -15,11 +15,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    scroll-behavior: auto;
 
     .modal-window-container {
       padding: 48px 20px 41px 20px;
       overflow-x: auto;
+      max-height: 100vh;
 
       .modal-window-container-poster {
         width: 240px;
@@ -31,7 +31,6 @@
 
       .modal-window-container-info {
         width: 240px;
-        
       }
 
       .modal-window-container-about {
@@ -44,4 +43,8 @@
       }
     }
   }
+}
+
+.modal-window-container::-webkit-scrollbar {
+  width: 0;
 }
