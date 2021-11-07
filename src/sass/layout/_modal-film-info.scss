@@ -33,15 +33,45 @@
       .modal-window-container-info {
         width: 240px;
 
+        .film-name-heading {
+          margin-bottom: 20px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 23px;
+          text-transform: uppercase;
+        }
+
         .film-info-list {
           .film-info-list-item {
             display: flex;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.33;
           }
         }
       }
 
       .modal-window-container-about {
         width: 240px;
+
+        .about-heading {
+          margin-bottom: 10px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1.33;
+          text-transform: uppercase;
+        }
+
+        .about-text {
+          margin-bottom: 21px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1.67;
+        }
       }
 
       .modal-window-container-forms {
