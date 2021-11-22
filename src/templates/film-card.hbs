@@ -1,0 +1,42 @@
+{{#each this}}
+<li class="collection__item">
+  <article class="card">
+    <a href="" class="card__link"">
+          {{#if poster_path}}
+          <img class="card__img" src="https://www.themoviedb.org/t/p/w500{{poster_path}}"
+      onerror="this.onerror=null;this.src='https://restorixhealth.com/wp-content/uploads/2018/08/No-Image.png' loading="lazy"
+      alt="{{title}}" title="{{title}}" data-id="{{id}}" />
+    {{else}}
+    <img class="card__img" src="https://infinityartstudio.com/wp-content/uploads/2021/02/New-Artwork-Coming-Soon.jpg" loading="lazy" alt="{{title}}"
+      title="{{title}}" data-id="{{id}}" />
+    {{/if}}
+    </a>
+    <div class="card__wrap">
+      {{#if original_title}}
+        <h2 class='card__title'>{{original_title}}</h2>
+      {{/if}}
+      {{#if name}} 
+        <h2 class="card__title" data-id="{{id}}">{{name}}</h2>
+      {{/if}}
+      <div class="card__data">
+        <ul class="card__genres list">
+          {{#if genres}}
+          {{#each genres}}
+          <li class="card__genre card__text">{{name}}{{#unless @last}},{{/unless}}</li>
+          {{/each}}
+          {{else}}<li class="card__genre card__text">N/A</li>
+          {{/if}}
+        
+          {{#if release_date}}
+          <p class="card__year card__text">| {{year}}</p>
+          {{else}}<p class="card__text">| </p>
+          {{/if}}
+          {{#if vote_average}}
+          <p class="card__rating card__text">{{vote_average}}</p>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </article>
+</li>
+{{/each}}

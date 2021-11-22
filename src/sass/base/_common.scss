@@ -5,8 +5,8 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -23,7 +23,7 @@ img {
 }
 
 .link {
-  color: #000000;
+  color: $black-color;
   text-decoration: none;
 }
 
@@ -33,8 +33,9 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: $black-color;
+  background-color: $white-color;
 }
-
-// изменить цвета на переменные когда они будут созданы 
+body.modal-open {
+  overflow: hidden;
+}

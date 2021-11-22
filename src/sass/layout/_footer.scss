@@ -1,0 +1,66 @@
+.footer {
+  width: 100%;
+  background: $grey-footer-color;
+  &__container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: $grey-color;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    @media screen and (min-width: $tablet-min-size) {
+      height: 77px;
+      padding-top: 30px;
+      padding-bottom: 28px;
+      flex-direction: row;
+      font-size: 16px;
+      line-height: 1.19;
+    }
+  }
+  &__button {
+    padding: 0;
+    border: 0px;
+    background-color: $grey-footer-color;
+    color: $grey-color;
+    cursor: pointer;
+    border-bottom: 1px solid $grey-color;
+  }
+  &__button:focus,
+  &__button:hover {
+    color: $orange-color;
+    border-bottom: 1px solid $orange-color; 
+    transition: color $cubic-bezier;
+  }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    @media screen and (min-width: $tablet-min-size) {
+      margin-right: 3px;
+      margin-bottom: 0;
+  }
+  }
+  &__developed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $tablet-min-size) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  }
+  &__heart-icon {
+    margin: 0 10px 0 10px;
+    width: 14px;
+    height: 12.75px;
+    @media screen and (min-width: $tablet-min-size) {
+      width: 14px;
+      height: 12.88px;
+  }
+  }
+}
